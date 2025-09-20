@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Azure Blob Upload</title></head>
+<body>
+<h2>Upload a file to Azure Blob Storage</h2>
+<form method="post" enctype="multipart/form-data">
+{% csrf_token %}
+{{ form.as_p }}
+<button type="submit">Upload</button>
+</form>
+{% if url %}
+<p>✅ File uploaded: <a href="{{ url }}" target="_blank">{{ url }}</a></p>
+{% endif %}
+</body>
+</html>
