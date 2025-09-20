@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['azuredemo20-g3djg2g5c8f0e4g0.centralindia-01.azurewebsites.net', 'localhost','127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = [
-"http://azuredemo20-g3djg2g5c8f0e4g0.centralindia-01.azurewebsites.net/",
+"https://azuredemo20-g3djg2g5c8f0e4g0.centralindia-01.azurewebsites.net"
 ]
 
 AZURE_STORAGE_CONNECTION_STRING = os.getenv('AZURE_STORAGE_CONNECTION_STRING','DefaultEndpointsProtocol=https;AccountName=azuredemo20sept;AccountKey=gefT4uCgRUYIgXL/w2vgljrauPxYn/7OjRTii4WEApa9rqqEKkFv2nuKkmXCR1MYGANq3O3j9T2f+AStEA/Sig==;EndpointSuffix=core.windows.net')
